@@ -41,4 +41,8 @@ function config.lua_snip()
   })
 end
 
+function config.rusttools()
+  require('rust-tools').setup()
+end
+
 return config

@@ -25,4 +25,10 @@ plugin({
   },
 })
 
+plugin({
+  'simrat39/rust-tools.nvim',
+  config = conf.rusttools,
+  after = 'nvim-lspconfig'
+})
+
 plugin({ 'L3MON4D3/LuaSnip', event = 'InsertCharPre', config = conf.lua_snip })
