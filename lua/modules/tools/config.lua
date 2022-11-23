@@ -35,4 +35,8 @@ function config.whichkey()
   require("which-key").setup{}
 end
 
+function config.wilder()
+  require("wilder").setup({modes = {':', '/', '?'}})
+end
+
 return config

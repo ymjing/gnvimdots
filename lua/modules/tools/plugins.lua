@@ -19,3 +19,8 @@ plugin({
   'folke/which-key.nvim',
   config = conf.whichkey
 })
+
+plugin({
+  'gelguy/wilder.nvim',
+  config = conf.wilder
+})
