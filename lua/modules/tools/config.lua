@@ -32,11 +32,15 @@ end
 
 
 function config.whichkey()
-  require("which-key").setup{}
+  require('which-key').setup{}
 end
 
 function config.wilder()
-  require("wilder").setup({modes = {':', '/', '?'}})
+  require('wilder').setup({modes = {':', '/', '?'}})
+end
+
+function config.bufdelete()
+  require('bufdelete')
 end
 
 return config

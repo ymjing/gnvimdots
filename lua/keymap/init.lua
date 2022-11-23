@@ -28,4 +28,6 @@ nmap({
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
   -- ToggleTerm
   { '<Leader>tt', cmd('ToggleTerm'), opts(noremap, silent) },
+  -- bufdelete
+  { '<Leader>w', cmd('Bdelete'), opts(noremap, silent) },
 })

@@ -24,3 +24,8 @@ plugin({
   'gelguy/wilder.nvim',
   config = conf.wilder
 })
+
+plugin({
+  'famiu/bufdelete.nvim',
+  config = conf.bufdelete
+})
