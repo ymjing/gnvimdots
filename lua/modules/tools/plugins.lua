@@ -29,3 +29,8 @@ plugin({
   'famiu/bufdelete.nvim',
   config = conf.bufdelete
 })
+
+plugin({
+  'lewis6991/gitsigns.nvim',
+  config = conf.gitsigns
+})

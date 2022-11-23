@@ -43,4 +43,8 @@ function config.bufdelete()
   require('bufdelete')
 end
 
+function config.gitsigns()
+  require('gitsigns').setup()
+end
+
 return config
