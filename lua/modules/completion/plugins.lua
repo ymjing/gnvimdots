@@ -26,6 +26,16 @@ plugin({
 })
 
 plugin({
+  'glepnir/lspsaga.nvim',
+  config = conf.lspsaga
+})
+
+plugin({
+  'j-hui/fidget.nvim',
+  config = conf.fidget
+})
+
+plugin({
   'simrat39/rust-tools.nvim',
   config = conf.rusttools,
   after = 'nvim-lspconfig'
