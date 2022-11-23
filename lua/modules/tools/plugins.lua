@@ -14,3 +14,8 @@ plugin({
     { 'nvim-telescope/telescope-fzy-native.nvim', opt = true },
   },
 })
+
+plugin({
+  'folke/which-key.nvim',
+  config = conf.whichkey
+})

@@ -30,4 +30,9 @@ function config.telescope()
   require('telescope').load_extension('fzy_native')
 end
 
+
+function config.whichkey()
+  require("which-key").setup{}
+end
+
 return config
