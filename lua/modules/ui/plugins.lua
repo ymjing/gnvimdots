@@ -5,15 +5,20 @@
 local plugin = require('core.pack').register_plugin
 local conf = require('modules.ui.config')
 
-plugin({ 'glepnir/zephyr-nvim', config = conf.zephyr })
-
-plugin({ 'glepnir/dashboard-nvim', config = conf.dashboard })
+plugin({
+  'shaunsingh/nord.nvim',
+  config = conf.nord
+})
 
 plugin({
-  'glepnir/galaxyline.nvim',
-  branch = 'main',
-  config = conf.galaxyline,
-  requires = 'kyazdani42/nvim-web-devicons',
+  'glepnir/dashboard-nvim',
+  config = conf.dashboard
+})
+
+plugin({
+  'nvim-lualine/lualine.nvim',
+  config = conf.lualine,
+  requires = 'kyazdani42/nvim-web-devicons'
 })
 
 plugin({
@@ -23,4 +28,14 @@ plugin({
   requires = 'kyazdani42/nvim-web-devicons',
 })
 
-plugin({ 'akinsho/nvim-bufferline.lua', config = conf.nvim_bufferline, requires = 'kyazdani42/nvim-web-devicons' })
+plugin({
+  'akinsho/nvim-bufferline.lua',
+  config = conf.nvim_bufferline,
+  requires = 'kyazdani42/nvim-web-devicons'
+})
+
+plugin({
+  'akinsho/toggleterm.nvim',
+  config = conf.toggleterm,
+  event = "UIEnter"
+})
