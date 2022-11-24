@@ -30,4 +30,11 @@ nmap({
   { '<Leader>tt', cmd('ToggleTerm'), opts(noremap, silent) },
   -- bufdelete
   { '<Leader>w', cmd('Bdelete'), opts(noremap, silent) },
+  -- lspsaga
+  { 'ca', cmd('Lspsaga code_action'), opts(noremap, silient) },
+  { 'ch', cmd('Lspsaga hover_doc'), opts(noremap, silient) },
+  { 'cd', cmd('Lspsaga peek_definition'), opts(noremap, silient) },
+  { 'cf', cmd('Lspsaga lsp_finder'), opts(noremap, silient) },
+  { 'c]', cmd('Lspsaga diagnostic_jump_next'), opts(noremap, silient) },
+  { 'c[', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silient) },
 })
