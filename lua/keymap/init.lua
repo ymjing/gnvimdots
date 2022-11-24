@@ -17,6 +17,10 @@ nmap({
   { '<Leader>pu', cmd('PackerUpdate'), opts(noremap, silent) },
   { '<Leader>pi', cmd('PackerInstall'), opts(noremap, silent) },
   { '<Leader>pc', cmd('PackerCompile'), opts(noremap, silent) },
+  -- buffer
+  { '<Leader>]', cmd('BufferLineCycleNext'), opts(noremap, silent) },
+  { '<Leader>[', cmd('BufferLineCyclePrev'), opts(noremap, silent) },
+  { '<Leader>w', cmd('Bdelete'), opts(noremap, silent) },
   -- dashboard
   { '<Leader>n', cmd('DashboardNewFile'), opts(noremap, silent) },
   { '<Leader>ss', cmd('SessionSave'), opts(noremap, silent) },
@@ -29,8 +33,6 @@ nmap({
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
   -- ToggleTerm
   { '<Leader>tt', cmd('ToggleTerm'), opts(noremap, silent) },
-  -- bufdelete
-  { '<Leader>w', cmd('Bdelete'), opts(noremap, silent) },
   -- lspsaga
   { 'ca', cmd('Lspsaga code_action'), opts(noremap, silient) },
   { 'ch', cmd('Lspsaga hover_doc'), opts(noremap, silient) },
