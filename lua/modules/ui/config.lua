@@ -48,12 +48,12 @@ function config.dashboard()
       icon = '  ',
       desc = 'Find File                              ',
       action = 'Telescope find_files find_command=rg,--hidden,--files',
-      shortcut = 'SPC f f',
+      shortcut = 'Leader f f',
     },
     {
       icon = '  ',
       desc = 'Update Plugins                          ',
-      shortcut = 'SPC p u',
+      shortcut = 'Leader p u',
       action = 'PackerUpdate',
     },
   }
