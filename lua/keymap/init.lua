@@ -12,6 +12,7 @@ local cmd = key.cmd
 
 -- usage of plugins
 nmap({
+  { '<Leader>q', cmd('quitall'), opts(noremap, silent) },
   -- packer
   { '<Leader>pu', cmd('PackerUpdate'), opts(noremap, silent) },
   { '<Leader>pi', cmd('PackerInstall'), opts(noremap, silent) },
