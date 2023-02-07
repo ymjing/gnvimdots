@@ -48,7 +48,7 @@ function config.lua_snip()
 end
 
 function config.lspsaga()
-  require('lspsaga').init_lsp_saga()
+  require('lspsaga').setup()
 end
 
 function config.fidget()
